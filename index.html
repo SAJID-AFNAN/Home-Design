@@ -218,8 +218,8 @@
     </main>
 
     <!-- Latest Portfolio -->
-    <section class="md:w-[80%] mx-auto w-[85%] md:py-28 py-12">
-        <div>
+    <section class="bg-[#E9E9E9] md:bg-white">
+        <div class="md:w-[80%] mx-auto w-[85%] md:py-28 py-12">
             <!-- Title part or Upper part-->
             <div class="text-center mb-8">
                 <button class="bg-[#ABEF5F33] md:px-4 px-6 md:py-2 py-2 text-lg font-bold rounded-3xl "><i
@@ -232,11 +232,12 @@
             </div>
 
             <!-- Middle part -->
-            <div class="grid grid-cols-3 gap-6">
+            <div class="md:grid md:grid-cols-3 gap-6 space-y-5 md:space-y-0 ">
                 <!-- Left Card -->
-                <div class="border p-5 rounded-xl col-span-2 flex gap-5 justify-center items-center h-fit">
+                <div
+                    class="border p-5 rounded-xl md:col-span-2 md:flex md:gap-5 justify-center items-center md:h-fit w-full space-y-5 md:space-y-0 bg-white">
                     <div class="w-full">
-                        <img src="./assets/img1.png" alt="">
+                        <img class="w-full" src="./assets/img1.png" alt="">
                     </div>
                     <div>
                         <h3 class="text-xl font-extrabold">Commercial</h3>
@@ -248,21 +249,25 @@
                     </div>
                 </div>
                 <!-- Right Card -->
-                <div class="border p-6 rounded-xl h-fit">
+                <div class="border p-6 rounded-xl h-fit bg-white">
                     <img src="./assets/img2.png" alt="">
                 </div>
             </div>
 
             <!--Lower part -->
-            <div class="grid grid-cols-4 gap-6 mt-6">
+            <div class="grid md:grid-cols-4 grid-cols-1 gap-6 mt-6">
+                <!-- hidden card only show in small device -->
+                <div class="border p-6 rounded-xl md:h-52 bg-white md:hidden">
+                    <img class="h-full w-full" src="./assets/img5.png" alt="">
+                </div>
                 <!-- Left Card -->
-                <div class="border p-6 rounded-xl h-52">
+                <div class="border p-6 rounded-xl md:h-52 bg-white order-2 md:order-1">
                     <img class="h-full w-full" src="./assets/img3.png" alt="">
                 </div>
                 <!-- Middle Card -->
-                <div class="border p-5 rounded-xl col-span-2 flex gap-5 justify-center items-center h-52">
+                <div class="border p-5 rounded-xl md:col-span-2 md:flex gap-5 justify-center items-center md:h-52 bg-white space-y-5 order-1 md:order-2">
                     <div class="w-full">
-                        <img src="./assets/img4.png" alt="">
+                        <img class="w-full" src="./assets/img4.png" alt="">
                     </div>
                     <div>
                         <h3 class="text-xl font-extrabold">Commercial</h3>
@@ -273,7 +278,7 @@
                     </div>
                 </div>
                 <!-- Right Card -->
-                <div class="border p-6 rounded-xl h-52">
+                <div class="border p-6 rounded-xl md:h-52 bg-white order-3">
                     <img class="h-full w-full" src="./assets/img5.png" alt="">
                 </div>
             </div>
@@ -294,60 +299,82 @@
             </div>
 
             <!-- Card part -->
-            <div class="flex gap-6">
+            <div class="md:flex space-y-5 md:space-y-0 gap-6">
                 <!-- Left Card -->
                 <div class="bg-white rounded-xl p-6">
                     <img src="./assets/article1.png" alt="">
                     <div class="text-[#737373] gap-4 flex items-center my-2">
-                        <i class="fa-solid fa-calendar-days text-xl"></i>
+                        <i class="fa-solid fa-calendar-days md:text-xl text-lg"></i>
                         <p>July14, 2024</p>
-                        <i class="fa-regular fa-circle-user text-xl"></i>
+                        <i class="fa-regular fa-circle-user md:text-xl text-lg"></i>
                         <p>By Admin</p>
                     </div>
                     <div>
-                        <h3 class="text-xl font-extrabold">How to choose the furniture right  of your home.</h3>
-                        <p class="text-lg text-[#737373] my-2">The barn house captivates with its blend of rustic charm
+                        <h3 class="md:text-xl text-lg font-extrabold">How to choose the furniture right of your home.
+                        </h3>
+                        <p class="md:text-lg text-[#737373] my-2">The barn house captivates with its blend of rustic
+                            charm
                             and modern.</p>
-                        <a class="text-lg font-bold">Read More <i
-                                class="fa-solid fa-arrow-right bg-[#ABEF5F] h-7 w-7 rounded-full inline-flex justify-center items-center -rotate-45"></i></a>
+                        <a class="md:text-lg font-bold">Read More <i
+                                class="fa-solid fa-arrow-right bg-[#ABEF5F] md:h-7 md:w-7 w-5 h-5 rounded-full inline-flex justify-center items-center -rotate-45"></i></a>
                     </div>
                 </div>
                 <!-- Middle Card -->
                 <div class="bg-white rounded-xl p-6">
                     <img src="./assets/article2.png" alt="">
                     <div class="text-[#737373] gap-4 flex items-center my-2">
-                        <i class="fa-solid fa-calendar-days text-xl"></i>
+                        <i class="fa-solid fa-calendar-days md:text-xl text-lg"></i>
                         <p>July14, 2024</p>
-                        <i class="fa-regular fa-circle-user text-xl"></i>
+                        <i class="fa-regular fa-circle-user md:text-xl text-lg"></i>
                         <p>By Admin</p>
                     </div>
                     <div>
-                        <h3 class="text-xl font-extrabold">How to choose the furniture right  of your home.</h3>
-                        <p class="text-lg text-[#737373] my-2">The barn house captivates with its blend of rustic charm
+                        <h3 class="md:text-xl text-lg font-extrabold">How to choose the furniture right of your home.
+                        </h3>
+                        <p class="md:text-lg text-[#737373] my-2">The barn house captivates with its blend of rustic
+                            charm
                             and modern.</p>
-                        <a class="text-lg font-bold">Read More <i
-                                class="fa-solid fa-arrow-right bg-[#ABEF5F] h-7 w-7 rounded-full inline-flex justify-center items-center -rotate-45"></i></a>
+                        <a class="md:text-lg font-bold">Read More <i
+                                class="fa-solid fa-arrow-right bg-[#ABEF5F] md:h-7 md:w-7 w-5 h-5 rounded-full inline-flex justify-center items-center -rotate-45"></i></a>
                     </div>
                 </div>
                 <!-- Right Card -->
                 <div class="bg-white rounded-xl p-6">
                     <img src="./assets/article3.png" alt="">
                     <div class="text-[#737373] gap-4 flex items-center my-2">
-                        <i class="fa-solid fa-calendar-days text-xl"></i>
+                        <i class="fa-solid fa-calendar-days md:text-xl text-lg"></i>
                         <p>July14, 2024</p>
-                        <i class="fa-regular fa-circle-user text-xl"></i>
+                        <i class="fa-regular fa-circle-user md:text-xl text-lg"></i>
                         <p>By Admin</p>
                     </div>
                     <div>
-                        <h3 class="text-xl font-extrabold">How to choose the furniture right  of your home.</h3>
-                        <p class="text-lg text-[#737373] my-2">The barn house captivates with its blend of rustic charm
+                        <h3 class="md:ext-xl text-lg font-extrabold">How to choose the furniture right of your home.
+                        </h3>
+                        <p class="md:text-lg text-[#737373] my-2">The barn house captivates with its blend of rustic
+                            charm
                             and modern.</p>
-                        <a class="text-lg font-bold">Read More <i
-                                class="fa-solid fa-arrow-right bg-[#ABEF5F] h-7 w-7 rounded-full inline-flex justify-center items-center -rotate-45"></i></a>
+                        <a class="md:text-lg font-bold">Read More <i
+                                class="fa-solid fa-arrow-right bg-[#ABEF5F] md:h-7 md:w-7 w-5 h-5 rounded-full inline-flex justify-center items-center -rotate-45"></i></a>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Connect with me -->
+    <!-- <section class="bg-[url('/assets/bg.jpg')] bg-cover bg-center w-full">
+        <div class="md:w-[80%] mx-auto w-[85%] md:py-28 py-12"> -->
+    <!-- Title part -->
+    <!-- <div class="text-center mb-8">
+                <button class="bg-[#ABEF5F33] md:px-4 px-6 md:py-2 py-2 text-lg font-bold rounded-3xl "><i
+                        class="fa-solid fa-arrow-right"></i> Rinterio News
+                </button>
+                <h1 class="md:text-5xl text-3xl font-bold mt-6 mb-6">Read Our Articles and News</h1>
+                <p class="md:text-lg text-[#6c6c6c] md:w-2/3 mx-auto ">The barn house captivates with its blend of
+                    rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            </div> -->
+
+    </div>
     </section>
     <footer>
 
